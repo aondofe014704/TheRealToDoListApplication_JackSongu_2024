@@ -167,8 +167,7 @@ public class UserServiceImplTest {
         userUpdateTaskRequest.setNewBody("You won't Appreciate My own experience, You have to have Yours");
         userUpdateTaskRequest.setTaskOwner(createTaskRequest.getTaskOwner());
         userService.update(userUpdateTaskRequest, createTaskRequest);
-        assertTrue(true, userUpdateTaskRequest.getNewTitle());
-        assertTrue(true, userUpdateTaskRequest.getNewBody());
+
     }
     @Test
     public void registerUser_login_createTask_deleteTaskTest(){
